@@ -7,7 +7,7 @@ services:
     volumes:
       - ollama_data:/root/.ollama
     ports:
-      - "11434:11434"
+      - "11435:11434"
     networks:
       - mynetwork
     entrypoint: ["/bin/sh", "/app/run.sh"]  # Esto falla si `run.sh` no está en `/app`
